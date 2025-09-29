@@ -1,0 +1,13 @@
+---
+alwaysApply: true
+---
+
+# Autonomous Rule Creation
+
+Create a new rule in .cursor/rules whenever you receive feedback from a user:
+- Extract the main point of the feedback
+- Create a new rule that captures this as a reusable instruction
+- Save the new rule with a short, descriptive name
+- Keep rules simple and avoid redundancy
+
+Apply this rule for every edit or create rule.

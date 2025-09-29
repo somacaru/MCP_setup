@@ -1,0 +1,9 @@
+---
+alwaysApply: true
+---
+
+# Cursor Rules Location
+
+Locate all rules in .cursor/rules
+
+Apply this rule for every edit or create rule

@@ -1,0 +1,17 @@
+---
+globs: *.py,**/*.py
+alwaysApply: false
+---
+# Python File Organization
+
+Place all Python files in the src folder to maintain proper project structure.
+
+## Requirements
+- All Python source files (.py) should be located in the src/ directory
+- This includes modules, scripts, and application files
+- Exceptions: configuration files, setup scripts, and root-level utility scripts may remain at project root
+
+## Application
+- Apply this rule when creating new Python files
+- Apply this rule when organizing existing Python files
+- Maintain consistent project structure across all Python development

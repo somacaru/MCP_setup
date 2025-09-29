@@ -1,0 +1,53 @@
+{
+    "mcpServers": {
+      "playwright": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "@playwright/mcp@latest",
+          "--headless"
+        ]
+      },
+      "Echo": {
+        "command": "python",
+        "args": [
+          "C:\\Users\\outsi\\.local\\bin\\echo_server.py"
+        ],
+        "env": {
+            "PYTHONPATH": "C:\\Users\\outsi\\AppData\\Roaming\\uv\\python\\cpython-3.13.7-windows-x86_64-none\\Lib\\site-packages"
+          }
+      },
+      
+      "sqlite": {
+        "command": "uv",
+        "args": [
+          "tool",
+          "run",
+          "mcp-server-sqlite"
+        ]
+      },
+      "git": {
+        "command": "uv",
+        "args": [
+          "tool",
+          "run",
+          "mcp-server-git"
+        ]
+      },
+      "uv-docs": {
+        "command": "uv",
+        "args": [
+          "run",
+          "uv-docs"
+        ]
+      },
+      "duckduckgo": {
+        "command": "uv",
+        "args": [
+          "tool",
+          "run",
+          "duckduckgo-mcp-server"
+        ]
+      }
+    }
+  } 

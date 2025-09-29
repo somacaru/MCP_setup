@@ -1,0 +1,16 @@
+---
+globs: **/*.py
+alwaysApply: false
+---
+# Python Coding Standards
+
+- Use 4 spaces for indentation
+- Maximum line length of 88 characters
+- Follow PEP 8 naming conventions
+- Use descriptive variable and function names
+- Add docstrings for all functions and classes
+- Imports in order: standard library, third-party, local application
+- Use type hints for function parameters and return values
+
+
+These standards ensure readability and consistency throughout our codebase.

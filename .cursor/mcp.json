@@ -1,0 +1,28 @@
+{
+  "mcpServers": {
+    "duckduckgo": {
+      "command": "uv",
+      "args": [
+        "tool",
+        "run",
+        "duckduckgo-mcp-server"
+      ]
+    },
+    "sqlite": {
+      "command": "uv",
+      "args": [
+        "tool",
+        "run",
+        "mcp-server-sqlite"
+      ]
+    },
+    "git": {
+      "command": "uv",
+      "args": [
+        "tool",
+        "run",
+        "mcp-server-git"
+      ]
+    }
+  }
+}
