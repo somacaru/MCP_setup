@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  security-mcp-server:
+    build: .
+    container_name: blackarch-security-mcp
+    environment:
+      - SCAN_DIRECTORY=/scans
+      - MAX_SCAN_TIME=300
+      - NONROOT=true
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./scans:/scans
+      - ./logs:/var/log/security-scans
+    networks:
+      - security-network
+    restart: unless-stopped
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    read_only: true
+    tmpfs:
+      - /tmp
+      - /var/tmp
+    ulimits:
+      nofile:
+        soft: 1024
+        hard: 4096
+
+networks:
+  security-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.100.0/24

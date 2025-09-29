@@ -1,6 +1,6 @@
-# Echo MCP Server
+# BlackArch Security Tools MCP Server
 
-A simple Model Context Protocol (MCP) server implementation that demonstrates how to create tools and resources using the FastMCP framework.
+A comprehensive Model Context Protocol (MCP) server that integrates BlackArch Linux security tools for educational penetration testing. Built with security-first principles and strict input validation.
 
 ## What is MCP?
 
